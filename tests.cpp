@@ -24,7 +24,12 @@ TEST_CASE("Ex1 makeRecord() ", "[example]")
 	REQUIRE(wnum == 7);
 	INFO("The MFU should b  z");
 	REQUIRE(mfu == 'z');
-
+}
+TEST_CASE("Ex2 makeRecord() ", "[example]")
+{
+	string filename;
+	int lnum, wnum;
+	char mfu;
 	filename = "textfile1.dat";
 	lnum = getNumLines(filename);
 	cout << "The number of lines: " << lnum << endl;
@@ -38,7 +43,12 @@ TEST_CASE("Ex1 makeRecord() ", "[example]")
 	REQUIRE(wnum == 980);
 	INFO("The MFU should b  o");
 	REQUIRE(mfu == 'e');
-
+}
+TEST_CASE("Ex3 makeRecord() ", "[example]")
+{
+	string filename;
+	int lnum, wnum;
+	char mfu;
 	filename = "textfile2.dat";
 	lnum = getNumLines(filename);
 	cout << "The number of lines: " << lnum << endl;
